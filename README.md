@@ -1,10 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 AI-Powered Email Assistant  
 
-## Getting Started
+An **AI-driven communication assistant** built with **Next.js, NextAuth, and Google Gemini API**, designed to automate the process of **fetching, analyzing, prioritizing, and replying** to customer support emails.  
 
-First, run the development server:
+This project was developed as part of a **Hackathon (03–06/09/2025)** with the goal of making **email management smarter, faster, and more efficient**.  
+
+---
+
+## 📂 Project Resources  
+
+- 📊 **AI Dashboard Video:** [View Dashboard] https://drive.google.com/file/d/14f73GXDS0Kml8YGqAFB3y2Zs1cjZ-xJ-/view?usp=sharing
+- 📝 **Project Report:** [Read Report] https://drive.google.com/file/d/1Scd7bjgSWtGRbuAOI84EWALQiHbaeH8D/view?usp=sharing
+
+---
+
+## ⚙️ Tech Stack  
+
+- **Frontend:** Next.js + Tailwind CSS  
+- **Backend:** Next.js (API Routes)  
+- **Authentication:** NextAuth (Google OAuth 2.0)  
+- **Email Integration:** Gmail API  
+- **AI Models:** Google Gemini API (Summarization, Sentiment, Urgency Detection)  
+- **Database (Planned):** PostgreSQL  
+
+---
+
+## 🚀 Getting Started  
+
+Clone the repository and install dependencies:  
 
 ```bash
+git clone https://github.com/your-username/ai-email-assistant.git
+cd ai-email-assistant
+npm install
+Run the development server:
 npm run dev
 # or
 yarn dev
@@ -12,25 +40,36 @@ yarn dev
 pnpm dev
 # or
 bun dev
-```
+Open http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🔑 Environment Variables
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Create a .env.local file in the root directory and add the following:
+GOOGLE_CLIENT_ID=your-google-client-id
+GOOGLE_CLIENT_SECRET=your-google-client-secret
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=your-nextauth-secret
+GEMINI_API_KEY=your-gemini-api-key
+DATABASE_URL=your-database-url
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+📸 Features
 
-To learn more about Next.js, take a look at the following resources:
+✅ Fetches and displays latest 5 Gmail emails
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+✅ AI-powered Summarization, Sentiment, and Urgency Detection
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+✅ Priority Queue for urgent emails
 
-## Deploy on Vercel
+✅ AI Response Generator with editable drafts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+✅ Interactive Dashboard with analytics
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+👤 Author
+
+Amrendra Kumar
+
+📧 Email: amrendra001122@gmail.com
+🔗 LinkedIn: https://www.linkedin.com/in/amrendra-kumar-9954b9225/
+✨ Feel free to fork, improve, and contribute to this project!
