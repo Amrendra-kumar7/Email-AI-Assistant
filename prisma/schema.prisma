@@ -1,0 +1,16 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL") // Use DATABASE_URL instead of MONGODB_URI
+}
+
+model Reply {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  emailId   String
+  reply     String
+  insights  Json?
+  createdAt DateTime @default(now())
+}
