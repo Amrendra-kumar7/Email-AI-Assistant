@@ -20,7 +20,7 @@ This project was developed as part of a **Hackathon (03–06/09/2025)** with the
 - **Authentication:** NextAuth (Google OAuth 2.0)  
 - **Email Integration:** Gmail API  
 - **AI Models:** Google Gemini API (Summarization, Sentiment, Urgency Detection)  
-- **Database (Planned):** PostgreSQL  
+- **Database :** Mongodb
 
 ---
 
@@ -45,12 +45,12 @@ Open http://localhost:3000
 🔑 Environment Variables
 
 Create a .env.local file in the root directory and add the following:
-GOOGLE_CLIENT_ID=your-google-client-id
-GOOGLE_CLIENT_SECRET=your-google-client-secret
+GOOGLE_CLIENT_ID=google-client-id
+GOOGLE_CLIENT_SECRET=google-client-secret
 NEXTAUTH_URL=http://localhost:3000
-NEXTAUTH_SECRET=your-nextauth-secret
-GEMINI_API_KEY=your-gemini-api-key
-DATABASE_URL=your-database-url
+NEXTAUTH_SECRET=nextauth-secret
+GEMINI_API_KEY=gemini-api-key
+DATABASE_URL=database-url
 
 
 📸 Features
